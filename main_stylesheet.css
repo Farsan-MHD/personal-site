@@ -1,0 +1,352 @@
+:root{
+    --color-blue:rgb(35, 35, 227);
+    --color-light-gray:rgb(109, 77, 77);
+    --color-white:white;
+    --color-black:black;
+}
+
+html{
+    scroll-behavior:smooth;
+    box-sizing:border-box;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+}
+
+body{
+    width:100%;
+}
+
+   /* header style start  */
+
+header{
+    position:sticky;
+    top:0;
+}
+
+#logo-countainer{
+    width:130px;
+    height:65px;
+    background-color: transparent;
+    position:absolute;
+    left:10px;
+    top:2px;
+}
+
+.boxes{
+    width:65px;
+    height:65px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:5px;
+}
+
+.box{
+    width:30px;
+    height:30px;
+}
+
+.box-1{
+    border-radius: 0 5px;
+    background-color: rgb(20, 20, 206);
+}
+
+.box-2{
+    border-radius: 5px 0;
+    background-color: rgb(250, 250, 10);
+}
+
+.box-3{
+    border-radius: 5px 0;
+    background-color: rgb(228, 60, 8);
+}
+
+.text-box{
+    color: aqua;
+    text-shadow: 1px 1px black;
+    font-weight:600;
+    font-size:12px;
+    font-family:sans-serif ,'Times New Roman', Times, serif;
+    position:relative;
+    left:35px;
+    bottom:23px;
+}
+
+/* my logo style end */
+
+#navbar{
+    height:12vh;
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    background-color: var(--color-light-gray);
+    gap:2px;
+}
+
+.nav-link{
+    color: var(--color-white);
+    font-size:1.3rem;
+    text-decoration:none;
+    padding:0 10px;
+    position:relative;
+}
+
+.nav-link:after{
+    content: "";
+    position:absolute;
+    background-color: var(--color-white);
+    height:3px;
+    width:0;
+    left:0;
+    bottom:-10px;
+    transition: 0.5s;
+}
+
+.nav-link:hover:after{
+    width:100%;
+}
+
+.link-1{
+    display:none;
+}
+
+   /*  header style end  */
+   /* welcome section style start */
+
+.welcome{
+    width:100%;
+    height:100vh;
+    background-color: var(--color-black);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+h1{
+    font-size:1.5rem;
+    text-align:center;
+    color: whitesmoke;
+}
+
+    /* welcome section style end */
+    /* about section style cstart */
+
+    #about-section{
+        width:100%;
+        background-color: darkgray;
+        padding:20px 0 50px 0;
+    }
+    
+    #image-1{
+        width:300px;
+        height:auto;
+        margin:auto;
+    }
+    
+    .image-1{
+        width:100%;
+    }
+    
+    .pera-section{
+        font-size:1.3rem;
+        width:90%;
+        margin:auto;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align:center;
+    }
+
+    .pera{
+        margin:20px auto;
+    }
+    
+    .name{
+        color:rgb(230, 55, 55);
+        font-weight:bolder
+    }
+
+    /* about section style end */
+    /* projects section style start */
+
+    #project{
+        width:100%;
+        height:70vh;
+        text-align: center;
+        background-color: darkgrey;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:50px;
+    }
+    
+    #project h2{
+        color:whitesmoke;
+        text-shadow: 2px 2px rgba(0,0,0,0.4) ;
+        font-size: 2rem;
+        font-family:sans-serif, serif;
+    }
+    
+    #project p{
+        font-size: 1.5rem;
+    }
+
+    .project-link{
+        padding:20px 30px;
+        background-color: #fff;
+        border-radius: 50%;
+        text-decoration: none;
+        color:black;
+    }
+
+    .project-link:hover{
+        background-color: blue;
+        color:whitesmoke;
+        transition-duration: 2s;
+    }
+
+    /* projects section style end */
+    /* profile section style start */
+
+    #profile-section{
+        background: linear-gradient(
+            darkgray,
+            darkblue
+        );
+    }
+    
+    .profile-section{
+        width:100%;
+        height:100vh;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        flex-wrap:wrap;
+        align-items:center;
+    }
+    
+    .profile-section h2{
+        font-size:2.5rem;
+        color: aqua;
+        text-align:center;
+        font-family:arial,sans-serif;
+        padding:0 5px;
+    }
+    
+    .link-section{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:wrap;
+        gap:20px;
+        margin:30px auto;
+    }
+    
+    .profile-link{
+        color: whitesmoke;
+        font-size:1.3rem;
+        text-decoration:none;
+        padding:0 10px;
+        position:relative;
+    }
+    
+    .profile-link:after{
+        content: "";
+        position:absolute;
+        background-color: whitesmoke;
+        height:3px;
+        width:0;
+        left:0;
+        bottom:-10px;
+        transition: 0.5s;
+    }
+
+    .profile-icon{
+        color:black;
+    }
+    
+    .profile-link:hover:after{
+        width:100%;
+    }
+
+    /* profile section style end */
+    /* footer section style start */
+
+footer{
+    width:100%;
+    height:15vh;
+    display:flex;
+    justify-content: flex-end;
+    padding:25px;
+    background-color: black;
+    color:aliceblue
+}
+
+dd{
+    margin-left:40px;
+}
+
+.footer-list a{
+    color:red;
+    text-decoration:none;
+}
+
+    /* footer section style end */
+    /* media queries style start  */
+
+@media (min-width:600px){
+
+    .link-1{
+        display:block;
+    }
+
+    .welcome h1{
+        font-size:3rem;
+    }
+
+    .profile-section h2{
+        font-size:4rem;
+    }
+
+    .link-section .profile-link{
+        font-size:2rem;
+    }
+}
+
+@media (min-width:1000px){
+    .welcome h1{
+        font-size:5rem;
+    }
+
+    .about-section{
+        width:80%;
+        height:100vh;
+        margin:auto;
+        padding:100px 0;
+    }
+
+    .box-0{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap:50px;
+    }
+
+    #image-1{
+        width:400px;
+    }
+
+    .pera-section{
+        text-align:left;
+        margin:0 auto;
+    }
+
+    #project h2{
+        font-size: 3.5rem;
+    }
+}
