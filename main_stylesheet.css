@@ -28,59 +28,66 @@ header{
     top:0;
 }
 
+/* my logo style start */
+
 #logo-countainer{
-    width:130px;
-    height:65px;
+    width:61px;
+    height:30px;
     background-color: transparent;
     position:absolute;
+    top:10px;
     left:10px;
-    top:2px;
 }
 
 .boxes{
-    width:65px;
-    height:65px;
+    width:27px;
+    height:30px;
     display:flex;
     flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
-    gap:5px;
+    gap:3px;
+    background-color: transparent;
 }
 
 .box{
-    width:30px;
-    height:30px;
+    width:12px;
+    height:12px;
 }
 
 .box-1{
-    border-radius: 0 5px;
+    border-radius: 0 2px;
     background-color: rgb(20, 20, 206);
 }
 
 .box-2{
-    border-radius: 5px 0;
+    border-radius: 2px 0;
     background-color: rgb(250, 250, 10);
 }
 
 .box-3{
-    border-radius: 5px 0;
+    border-radius: 2px 0;
     background-color: rgb(228, 60, 8);
+    position:relative;
+    bottom:1px;
 }
 
 .text-box{
     color: aqua;
     text-shadow: 1px 1px black;
     font-weight:600;
-    font-size:12px;
+    font-size:6px;
     font-family:sans-serif ,'Times New Roman', Times, serif;
     position:relative;
-    left:35px;
-    bottom:23px;
+    left:15px;
+    bottom:10px;
 }
 
 /* my logo style end */
+/* navbar style start */
 
 #navbar{
-    height:70px;
+    height:50px;
     width:100%;
     display:flex;
     justify-content:flex-end;
@@ -91,7 +98,7 @@ header{
 
 .nav-link{
     color: var(--color-white);
-    font-size:1.3rem;
+    font-size:15px;
     text-decoration:none;
     padding:0 10px;
     position:relative;
@@ -175,9 +182,9 @@ h1{
 
     #project{
         width:100%;
-        height:70vh;
+        height:200px;
         text-align: center;
-        background-color: darkgrey;
+        background-color: darkgray;
         display:flex;
         flex-direction: column;
         justify-content: center;
@@ -193,7 +200,7 @@ h1{
     }
     
     #project p{
-        font-size: 1.5rem;
+        font-size: 20px;
     }
 
     .project-link{
@@ -307,6 +314,10 @@ dd{
 
     .welcome h1{
         font-size:3rem;
+    }
+
+    .pera-section{
+        font-size: 1.3rem;
     }
 
     .profile-section h2{
